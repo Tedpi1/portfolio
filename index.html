@@ -9,6 +9,12 @@
         <link rel="stylesheet" href="css\style.css">
         <link rel="stylesheet" href="css\skins\color -1.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <!-- style switcher -->
+        <link rel="stylesheet" href="css\skins\color -1.css" class="alternate-style" title="color -1" disabled>
+        <link rel="stylesheet" href="css\skins\color -2.css" class="alternate-style" title="color -2" disabled>
+        <link rel="stylesheet" href="css\skins\color -3.css" class="alternate-style" title="color -3" disabled>
+        <link rel="stylesheet" href="css\skins\color -4.css" class="alternate-style" title="color -4" disabled>
+        <link rel="stylesheet" href="css\skins\color -5.css" class="alternate-style" title="color -5" disabled>
         <link rel="stylesheet" href="css\styleswitcher.css">
     </head>
     <body>
@@ -23,25 +29,25 @@
                     <span></span>
                 </div>
                 <ul class="nav">
-                    <li><a href="" class="active"><i class="fa fa-home"></i >Home</a></li>
-                    <li><a href=""><i class="fa fa-user"></i >About</a></li>
-                    <li><a href=""><i class="fa fa-list"></i >Services</a></li>
-                    <li><a href=""><i class="fa fa-briefcase"></i >Portfolio</a></li>
-                    <li><a href=""><i class="fa fa-comments"></i >Contact</a></li>
+                    <li><a href="#home" class="active"><i class="fa fa-home"></i >Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user"></i >About</a></li>
+                    <li><a href="#service"><i class="fa fa-list"></i >Services</a></li>
+                    <li><a href="#portfolio"><i class="fa fa-briefcase"></i >Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa fa-comments"></i >Contact</a></li>
                 </ul>
             </div>
             <!--aside end-->
             <!--main content start-->
-            <div class="main-content "style="left: 170px; right: 0px; top: 0px; bottom: 0px;">
+            <div class="main-content">
                 <!--home section start-->
-                <section class="home section ">
+                <section class="home active section " id="home" >
                     <div class="container">
                         <div class="row">
                             <div class="home-info padd-15">
                                 <h3 class="hello">Hello, my name is <span class="name">Antoney Ochieng</span></h3>
-                                <h3 class="my-profession">I' am a <span class="typing"> Web Developer</span></h3>
-                                <p>I am a web Developer with variety of skills when it come to web development <br>I have an experience of 2 years till today</p>
-                                <a href="#contact" class="btn hire-me">Hire Me</a>
+                                <h3 class="my-profession">I' am a <span class="typing"></span></h3>
+                                <p>I am a web Developer with variety of skills when it come to web development <br>I have an experience of <span id="coding"></span> years till today</p>
+                                <a href="images\portfolio\scroll.JPG" class="btn" download>Download CV</a>
                             </div>
                             <div class="home-img padd-15">
                                 <img src="images/prof.jpg" alt="no pic">
@@ -51,7 +57,7 @@
                 </section>
                 <!--home section end-->
                 <!--about section start-->
-                <section class="about section ">
+                <section class="about section" id="about">
                     <div class="container">
                         <div class="row">
                             <div class="section-title">
@@ -76,7 +82,7 @@
                                                 <p>Birthday: <span>02 Nov 2003</span></p>
                                             </div>
                                             <div class="info-item padd-15">
-                                                <p>Age: <span>21</span></p>
+                                                <p>Age: <span id="age"></span></p>
                                             </div>
                                             <div class="info-item padd-15">
                                                 <p>Email: <span>moroted16@gmail.com</span></p>
@@ -99,8 +105,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="buttons padd-15">
-                                                <a href="#" class="btn">Download CV</a>
-                                                <a href="#contact" class="btn hire-me">Hire me</a>
+                                                <a href="#contact" data-section-index="1" class="btn hire-me">Hire me</a>
                                             </div>
                                         </div>
                                     </div>
@@ -188,21 +193,22 @@
                                                     <div class="timeline-item">
                                                         <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i>2022 - 2026
+                                                            <i class="fa fa-calendar"></i>2022 - <span id="year"></span>
                                                         </h3>
-                                                        <h4 class="timeline-title">Degree in Business Information Technology</h4>
-                                                        <p class="timeline-text">Joined University of Embu in Embu County to pursue Bachelor of Science in Business Information Technology</p>
+                                                        <h4 class="timeline-title">Web Development</h4>
+                                                        <p class="timeline-text">I have make great effort in improving my web development skill for the past <span id="code"></span> years. While improving my web development skill i've been to exposed to 
+                                                        other technologies like blockchain which am still studying about</p>
                                                     </div>
                                                     <!--Timeline item end-->
                                                     <!--Timeline item-->
                                                     <div class="timeline-item">
                                                         <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i>2018 - 2021
+                                                            <i class="fa fa-calendar"></i>2023- <span id="des"></span>
                                                         </h3>
-                                                        <h4 class="timeline-title">Kenya Certificate of Secondary Education</h4>
-                                                        <p class="timeline-text">In 2018 joined Onjiko Highschool in Kisumu County to continue with highschool studies and completed my 
-                                                            final exams in 2021 with a grade of C+
+                                                        <h4 class="timeline-title">Web Designing</h4>
+                                                        <p class="timeline-text">I've been learning web design for the past <span id="cod"></span> years. I've been able to create some cool websites designs
+                                                        using Figma and UI/XD that are very simple and easy to develop</p>
                                                         </p>
                                                     </div>
                                                     <!--Timeline item end-->
@@ -210,10 +216,12 @@
                                                     <div class="timeline-item">
                                                         <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i>2010 - 2017
+                                                            <i class="fa fa-calendar"></i>2021- <span id="code4"></span>
                                                         </h3>
-                                                        <h4 class="timeline-title">Kenya Certificate of Primary Education</h4>
-                                                        <p class="timeline-text">I begun my education in 2010 in a primary school called Lavington Primary School which was located in Nairobi County in Westland district</p>
+                                                        <h4 class="timeline-title">Technical Assistant</h4>
+                                                        <p class="timeline-text">
+                                                            I have worked as a technical assistant in different organization. I have  experience in handling technical problems both software and hardware.
+                                                        </p>
                                                     </div>
                                                     <!--Timeline item end-->
                                                 </div>
@@ -227,7 +235,7 @@
                 </section>
                 <!--about section end-->
                 <!--Service section start-->
-                <section class="service section">
+                <section class="service section" id="service">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -293,7 +301,7 @@
                 </section>
                 <!--Service section end-->
                 <!--Portfolio section start-->
-                <section class="portfolio section ">
+                <section class="portfolio section " id="portfolio">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -306,56 +314,52 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="btn-portfolio ">
-                            <button  class="active" data-id="all">All</button>
-                            <button data-id="graphic">Graphic Designing</button>
-                            <button data-id="design">Web Designing</button>
-                            <button data-id="development">Web Development</button>
-                            <button data-id="database">Database Administration</button>
+                        <div class="icon-container ">
+                            <div class="tooltip padd-15">
+                                <span class="tooltiptext"  >All</span>
+                                <span class="filter-icon icon active" data-id="all" > <i class="fas fa-check-circle" ></i></span>
                             </div>
-                            <!-- <i class="fas fa-filter filter-icon">
-                                <span>Filter</span>
-                            </i> -->
+                            <div class="tooltip padd-15">
+                                <span class="tooltiptext"  >Database</span>
+                                <span class="filter-icon" data-id="database"><i class="fas fa-database icon" ></i></span>
+                            </div>
+                        <div class="tooltip padd-15">
+                            <span class="tooltiptext">Web Designing</span>
+                            <span class="filter-icon" data-id="designing"><i class="fas fa-palette icon"></i></span>
                         </div>
-                        <div class="row">
-                            <!-- project items -->  
-                                <!-- single item -->
-                            <div class="portfolio-items padd-15">
-                                <div class="portfolio-item-inner shadow-box" data-id="development">
-                                    <a href="https://scrollprojs.netlify.app/">
-                                        <div class="portfolio-img">
-                                            <img src="images\portfolio\scroll.jpg" alt="portfolio image">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end of single item -->
-                                <!-- single item -->
-                                <div class="portfolio-items padd-15">
-                                    <div class="portfolio-item-inner shadow-box " data-id="database">
-                                        <a href="https://52df8688-d7c6-40db-9910-7bddb67cbae3-00-2wcnxwjsg2sd0.spock.replit.dev/">
-                                            <div class="portfolio-img">
-                                                <img src="images\portfolio\aip.jpg" alt="portfolio image">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            <!-- single item -->
-                            <div class="portfolio-items padd-15">
-                                <div class="portfolio-item-inner shadow-box" data-id="design">
-                                    <a href="https://52df8688-d7c6-40db-9910-7bddb67cbae3-00-2wcnxwjsg2sd0.spock.replit.dev/">
-                                        <div class="portfolio-img">
-                                            <img src="images\portfolio\ai.jpg" alt="portfolio image">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end of single item -->
-                        </div>
+                    <div class="tooltip padd-15">
+                        <span class="tooltiptext">Graphic Degigning</span>
+                        <span class="filter-icon" data-id="graphic"><i class="fas fa-paint-brush icon"></i></span>
                     </div>
+                    <div class="tooltip padd-15">
+                        <span class="tooltiptext">Web Devolopment</span>
+                        <span class="filter-icon" data-id="web"><i class="fas fa-code icon"></i></span>
+                    </div>
+                </div><div class="row">
+                    <div class="btn-container">
+                        <button class="filter-btn btn-container active " data-id="all">All</button>
+                        <button class="filter-btn" data-id="database">Database</button>
+                        <button class="filter-btn" data-id="designing">Web Designing</button>
+                        <button class="filter-btn" data-id="graphic">Graphic</button>
+                        <button class="filter-btn" data-id="web">Web Development</button>
+                    </div>
+                </div>
+                        </div>
+                            <div class="portfolio-items-section ">
+                            <!-- start of single item -->
+                            <!-- <div class="portfolio-items">
+                                <div class="portfolio-item-inner">
+                                    <a href="">
+                                        <img src="images\portfolio\portfolio-1.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div> -->
+                            <!-- end of single item -->
+                        </div>
+
                     </div>
                 </section>
-                <section class="contact section ">
+                <section class="contact section " id="contact">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -397,30 +401,31 @@
                         <h4 class="contact-sub-title padd-15">I'm Very Responsive To my Emails</h4>
                         <!--Contact form-->
                         <div class="row">
+                            <form  method="post" class="contact-form" id="contact-form">
                             <div class="contact-form padd-15">
                                 <div class="row">
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="name">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="name">
                                         </div>
                                     </div>
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="email">
+                                            <input type="email" class="form-control" id="email" placeholder="email">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="subject">
+                                            <input type="text" class="form-control" id="subject" placeholder="subject">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <textarea name="" class="form-control" id="" placeholder="message"></textarea>
+                                            <textarea name="" class="form-control" id="message" placeholder="message"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -432,6 +437,7 @@
                                     </div>
                                 </div>
                             </div>
+                            </form>
                         </div>
 
                     </div>
@@ -443,23 +449,28 @@
         <!--main container end-->
         <!-- style switcher start -->
         <div class="style-switcher">
-            <div class="style-switcher-toggle s-icon">
+            <div class="style-switcher-toggler s-icon">
                 <i class="fas fa-cog fa-spin"></i>
             </div>
             <div class="day-night s-icon">
                 <i class="fas fa-moon"></i>
             </div>
-            <h3>Theme Settings</h3>
-            <div class="colors">
-                <span class="color-1" onclick="setActiveStyle('color -1')"></span>
-                <span class="color-2" onclick="setActiveStyle('color -2')"></span>
-                <span class="color-3" onclick="setActiveStyle('color -3')"></span>
-                <span class="color-4" onclick="setActiveStyle('color -4')"></span>
-                <span class="color-5" onclick="setActiveStyle('color -5')"></span>                 
+                <h3>Theme Settings</h3>
+                <div class="colors">
+                    <span class="color-1" onclick="setActiveStyle('color -1')"></span>
+                    <span class="color-2" onclick="setActiveStyle('color -2')"></span>
+                    <span class="color-3" onclick="setActiveStyle('color -3')"></span>
+                    <span class="color-4" onclick="setActiveStyle('color -4')"></span>
+                    <span class="color-5" onclick="setActiveStyle('color -5')"></span>                 
             </div>
         </div>
         <!-- style switcher end -->
         <!--Js file-->
         <script src="js\script.js"></script>
+        <script src="js\style-switcher.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js\contact.js"></script>
     </body>
 </html>
