@@ -6,26 +6,30 @@ const portfolioItem=[
         link:"https://https://scrollprojs.netlify.app/",
     },
     {
-        id:1,
+        id:2,
         category:"graphic",
         img:"./images/portfolio/portfolio-2.jpg",
         link:"https://scroll-website.netlify.app/",
     },
     {
-        id:1,
+        id:3,
         category:"designing",
         img:"./images/portfolio/designe12.jpg",
         link:"https://app.clickup.com/9012150273/v/s/90121060353",
     },
     {
-        id:1,
+        id:4,
         category:"database",
         img:"./images/portfolio/portfolio-4.jpg",
         link:"https://https://app.clickup.com/9012150273/v/s/90121060353",
     },
     {
-        
-    }
+        id:4,
+        category:"database",
+        img:"./images/portfolio/ecomweb.JPG",
+        link:"https://tedshop.onrender.com/",
+    },
+    
 ]
 const portfolio=document.querySelector(".portfolio-items-section");
 window.addEventListener("DOMContentLoaded",function(){
@@ -106,6 +110,7 @@ const currentYear3 = new Date().getFullYear();
 const yearsCoding2 = currentYear3 - starYear;
 document.getElementById("cod").textContent = yearsCoding2;
 document.getElementById("year").textContent = currentYear
+document.getElementById("yr").textContent = currentYear
 document.getElementById("des").textContent = currentYear
 document.getElementById("code4").textContent = currentYear
 
